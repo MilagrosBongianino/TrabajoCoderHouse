@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: nome;
+    text-decoration-color: white;
+}
+
+/*---- Header ----*/
+
+header{
+    background-color: #080E33;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    width: 40%;
+}
+ul{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+/*---- Carrousel----*/
+
+#conteItemsCarrousel{
+    height: 800px;
+    overflow: hidden;
+}
+.Carrousel{
+height: 800px;
+position: relative;
+}
+
+.tarjetaCarrousel{
+  
+    height: 100%;
+}
+
+.flechascarrousel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tarjetaCarrousel-1{
+background-color: blueviolet;
+}
+
+#tarjetaCarrousel-2{
+    background-color: brown;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    i{
+        color: white;
+    }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+
+/*---- Seccion Trabajos ----*/
+
+.TRABAJOS__Titulo{
+    padding: 3%;
+    text-align: center;
+    color: #080E33;
+    font-family: Arial, Helvetica, sans-serif; font-style: normal;
+}
+
+.column img{
+    width: 100%;
+   height: auto;
+   padding: 5px;
+}
+
+.row{
+    display: flex;
+    align-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 30%;
+    padding: 5px;
+}
+
+@media (max-width:600px){
+    .column{
+        flex: 100%;
+    }
+}
+
+/*---- Seccion Servicios ----*/
+
+.Servicios__Titulo{
+    padding: 3%;
+    text-align: center;
+    color: #080E33;
+    font-family: Arial, Helvetica, sans-serif; font-style: normal;
+}
+
+.ContenedordeTarjeta{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.Tarjeta1{
+    width: 33%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #ED6927;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    float: left;
+}
+
+.Tarjeta1 img{
+    height: 350px;
+    width: 450px;
+    padding: 5%
+}
+
+.Contenido{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5%;
+}
+
+.ContenedordeTarjeta2{
+    width: 100px;
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+.Tarjeta2{
+    width: 33%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #0DB2AB;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    float: left;
+}
+
+.Tarjeta2 img{
+    height: 350px;
+    width: 450px;
+    padding: 5%
+}
+
+.ContenedordeTarjeta3{
+    width: 100px;
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+.Tarjeta3{
+    width: 33%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #080E33;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    float: left;
+}
+
+.Tarjeta3 img {
+    height: 368px;
+    width: 450px;
+    padding: 5%
+}
+
+/*---- Seccion Clientes ----*/
+
+.Clientes__Titulo {
+    text-align: center;
+    color: #080E33;
+    font-family: Arial, Helvetica, sans-serif; font-style: normal;
+    text-align: center;
+}
+.TarjetaClientes{
+    min-width: 300px;
+    background-color: #0DB2AB
+    display flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.TarjetaClientes img{
+    min-width: 00%;
+    margin: 0%;
+}
+
+.CarrouseldeClientes{
+    display: flex;
+    overflow: auto;
+}
+
+/*---- Seccion Redes ----*/
+
+.Redes{
+    padding: 5%;
+    background-color: #080E33;
+    display: flex;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+}
+
+.Redes img {
+    height: 7%;
+    width: 7%;
+    display: flex;
+    align-content: center;
+}
+
+/*---- Pagina Trabajo ----*/
+.VideoTrabajo{
+    width: 100%;
+    height: 20%;
+}
+
+.VideoTrabajo2{
+    width: 99%;
+    height: 20%;
+}
+
+.VideoTrabajo3{
+    width: 203%;
+    display: flex;
+}
+
+/*---- Pagina Quienes Somos ----*/
+
+.Conocenos1{
+    width: 1348px;
+    display: flex;
+    height: auto
+}
+.Conocenos__contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: #ED6927;
+    width: 1100px;
+    height: auto
+}
+.PrimerTrabajador{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+}
+
+.PrimerTrabajador__texto{
+   padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .Linkeding{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .Conocenos2{
+    width: 1348px;
+    display: flex;
+    height: auto;
+}
+.Conocenos__contenedor2{
+    display: flex;
+    flex-direction: column;
+    background-color: #080E33;
+    width: 1100px;
+}
+.PrimerTrabajador{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+}
+.PrimerTrabajador__texto{
+   padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .Linkeding{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+ /*---- Pagina Contacto ----*/
+
+ .Formulario{
+    width: 50%;
+    background-color: #0DB2AB;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+ }
+
+ .controls{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 12px;
+ }
+
+.Formulariodecontacto{
+    background-color: #0DB2AB;
+}
+
+.Formularioescribinos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+   
+}
+
+.RedesFormulario{
+    padding: 5%;
+    background-color: #ED6927;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+}
+
+.RedesFormulario img {
+    height: 7%;
+    width: 7%;
+    display: flex;
+    align-content: center;
+}
+
+/*---- Pagina Servicios ----*/
+
+.ContenedordeTarjeta4{
+    width: 100%;
+    height: 100%;
+
+}
+
+.Tarjeta4{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #ED6927;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    
+}
+
+.Contenido{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+    
+
+.ContenedordeTarjeta5{
+    width: 100%;
+    height: 100%;
+
+}
+
+.Tarjeta5{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #0DB2AB;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+.textmarketing{
+    color: #080E33;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.ContenedordeTarjeta6{
+    width: 100%;
+    height: 100%;
+
+}
+
+.Tarjeta6{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #080E33;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
