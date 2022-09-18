@@ -88,184 +88,161 @@ header{
 /*---- Seccion Servicios ----*/
 
 .Servicios__Titulo{
-    padding: 2%;
+    margin-top: 30px;
     text-align: center;
     color: #080E33;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-variant: small-caps;
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.card{
+.ContenedorTarjetasSevicios{
     position: relative;
     width: 100%;
-    height: 350px;
-    margin-top: 10px;
-    margin: 9px;
-    border: #080E33;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 }
 
-.card .face{
-    position: absolute;
+.ContenedorTarjetasSevicios .Card{
+    position: relative;
+    max-width: 300px;
+    height: 235px;
+    background-color: #080E33;
+    padding: 20px 15px;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(0,0,0,0.5);
+    transition: 0,3s ease-in-out;
+}
+
+.ContenedorTarjetasSevicios .Card:hover{
+    height: 510px;  
+}
+.ContenedorTarjetasSevicios .Card .ServiciosImagenes{
+    position: relative;
     width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    overflow: hidden;
-    transition: 1s;
+    height: 260px;
+    top: -60px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,2);
 }
 
-.card .front{
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000
-    
-}
-
-.card .front img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.ContenedorTarjetasSevicios .Card .ServiciosImagenes img{
+    max-width: 100%;
+    border-radius: 4px;
     object-fit: cover;
 }
 
-/*---.card .front h3{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: white;
-    background-color: rgb(0,0,0, .5);
+.ContenedorTarjetasSevicios .Card .Contenido{
+    position: relative;
+    margin-top: -140px;
+    padding: 30px 35px;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}---*/
-
-.card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background-color: #0DB2AB;
-    padding: 15px;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    
-}
-
-.card .back .link a{
-color: #080E33;
-text-decoration: nome;
-text-decoration-color: #0DB2AB;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 20px;
-}
-
-.card .back h3{
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-    color: #080E33 ;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
-
-.card .back p{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.ContenedorTarjetasSevicios .Card .Contenido p{
+    font-size: small;
+    font-style: normal;
+}
+.ContenedorTarjetasSevicios .Card .Contenido a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: nome;
+    text-decoration-color: #080E33;
+    color: #ED6927;
+}
+.ContenedorTarjetasSevicios .Card .Contenido h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ED6927;
+}  
+.ContenedorTarjetasSevicios .Card:hover .Contenido{
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    margin-top: -60px;
+    transition-delay: 0.3s;
 
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
 }
 
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-}
-
-@media (min-width:720px) {
-    .card{
-        position: relative;
-        width: 47%;
-        height: 350px;
-        margin-top: 10px;
-        float: left;
-        margin: 12px;
-        border: #080E33;
-        align-content: center;
-    
-    }
 
 
-    @media (min-width:1140px) {
-        .card{
-            position: relative;
-            width: 31%;
-            height: 350px;
-            margin-top: 10px;
-            float: left;
-            margin: 15px;
-            border: #080E33;
-            align-content: center;
-         }
-        }s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---- Seccion Clientes ----*/
 
 .Clientes__Titulo {
-    text-align: center;
-    color: #080E33;
-    font-family: Arial, Helvetica, sans-serif; font-style: normal;
-    text-align: center;
-}
-.TarjetaClientes{
-    min-width: 300px;
-    background-color: #0DB2AB
-    display flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.TarjetaClientes img{
-    min-width: 00%;
-    margin: 0%;
-}
+        text-align: center;
+        color: #080E33;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 30%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
 
 .CarrouseldeClientes{
     display: flex;
+    min: width 300px;
     overflow: auto;
+    gap: 20px;
 }
+
 
 /*---- Seccion Redes ----*/
+ @media (min-width:560px) {
+    .contenedorderedes{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #080E33;
+        color: white;
+        font-size: 2rem;
+        } 
+ }
 
-.Redes{
-    padding: 5%;
-    background-color: #080E33;
-    display: flex;
-    justify-content: center;
-    height: 5%;
-    width: 100%;
-}
 
-.Redes img {
-    height: 7%;
-    width: 7%;
-    display: flex;
-    align-content: center;
-}
+@media (min-width:1140px) {
+    .contenedorderedes{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #080E33;
+        color: white;
+        font-size: 2rem;
+        }
+    } 
+ 
 
-/*---- Pagina Trabajo ----*/
-.VideoTrabajo{
-    width: 100%;
-    height: 20%;
-}
 
-.VideoTrabajo2{
-    width: 99%;
-    height: 20%;
-}
 
-.VideoTrabajo3{
-    width: 203%;
-    display: flex;
-}
+
+
+
+
+
+
+
+
+
 
 /*---- Pagina Quienes Somos ----*/
 
@@ -445,3 +422,4 @@ font-size: 20px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
 }
+
