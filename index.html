@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -148,103 +149,46 @@
 </div>
 </section>
 
-<section class="Clientes">
+<section>
   <h2 class="Clientes__Titulo">CLIENTES</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./assets/LogoGueros.png" alt="1">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Logo-02.png" alt="2">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Logo en png.png" alt="3">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Logo marconi.png" alt="4">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Logo contadora.png" alt="5">
+      </div>
+      <div class="swiper-slide">
+      <img src="./assets/Logo federacion 1.png" alt="6">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Logo federacion 2.png" alt="7">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/logo federacion 3.png" alt="8">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Logo clau.png" alt="9">
+      </div>
+    </div>
+  </div>
+  </section>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-        <main>
-          <section class="Clientes">
-            <h2 class="Clientes__Titulo">CLIENTES</h2>
-       
-       <div class="CarrouseldeClientes">
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/LogoGueros.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Logo sin fondo.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Logo-02.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Eleven solo-01.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Logo en png.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Logo look.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Logo marconi.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Logo federacion 1.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                   <img src="./assets/Logo federacion 2.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                  <img src="./assets/logo federacion 3.png" alt="">
-               </article>
-               <article class="TarjetaClientes">
-           
-                <img src="./assets/Logo contadora.png" alt="">
-             </article>
-             <article class="TarjetaClientes">
-           
-              <img src="./assets/Logo clau.png" alt="">
-           </article>
-           </div>
-          </section>
-
-
+  
   <div class="Redes">
     <div class="contenedorderedes">
       <i class="bi bi-facebook" class="iconos-redes"></i>
@@ -253,5 +197,24 @@
     </div>  
   </div>
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: -10,
+      depth: 50,
+      modifier: 0,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
 </body>
 </html>
