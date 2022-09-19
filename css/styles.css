@@ -382,12 +382,87 @@ display: block;
     margin-top: 20px;
 }
 
+/*---- Pagina Trabajos ----*/
 
+.Contenedordetrabajo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+}
 
+.gallery_fotos{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.Galery_video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.gallery__item{
+    position: relative;
+}
 
+.Galery_titulos{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: #080E33;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
 
+@media (min-width:720px){
+    .Contenedordetrabajo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        grid-gap: 10px;
+    }
+
+.gallery__item:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(4) {
+    grid-row-start: span 2;
+}
+ 
+.gallery__item:nth-child(14) {
+    grid-row-start: span 2;
+}
+}
+
+@media (min-width:1140px) {
+    .Contenedordetrabajo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+        grid-gap: 10px;
+    }
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(14) {
+        grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(15) {
+        grid-column: span 2;
+        grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(13) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+}
 
 
 
@@ -448,66 +523,5 @@ display: block;
     width: 7%;
     display: flex;
     align-content: center;
-}
-
-/*---- Pagina Servicios ----*/
-
-.ContenedordeTarjeta4{
-    width: 100%;
-    height: 100%;
-
-}
-
-.Tarjeta4{
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    background-color: #ED6927;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    
-}
-
-.Contenido{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-    
-
-.ContenedordeTarjeta5{
-    width: 100%;
-    height: 100%;
-
-}
-
-.Tarjeta5{
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    background-color: #0DB2AB;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-}
-
-.textmarketing{
-    color: #080E33;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.ContenedordeTarjeta6{
-    width: 100%;
-    height: 100%;
-
-}
-
-.Tarjeta6{
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    background-color: #080E33;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
 }
 
