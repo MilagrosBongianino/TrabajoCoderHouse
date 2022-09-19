@@ -1,64 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVICIOS</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header>
-        <div class="Logotipo"><img src="./assets/logocreators.png" alt="logo" srcset="">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./quienessomos.html">Quienes Somos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./trabajos.html">Trabajos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-
-
-<div class="Contenedordetarjeta4">
-    <div class="Tarjeta4">
-        <img src="./assets/Diseño2.jpg" alt="">
-        <div class="Contenido">
-            <h3>DISEÑO GRÁFICO</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illum iusto porro, dolores architecto repellendus obcaecati tempora omnis, aut autem hic perspiciatis libero, earum ad id ex voluptates placeat incidunt.
-            </p>
-            <a href="CONOCE MÁS">CONOCÉ MÁS</a>
-        </div>
+  <header class="navbar navbar-expand-lg bg-#080E33">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/logocreators.png" alt="" class="w-auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./quienessomos.html">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./trabajos.html">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </nav>
     </div>
-</div>
-<div class="ContenedoradeTarjeta5">
-        <div class="Tarjeta5">
-        <img src="./assets/Marketing1.jpg" alt="">
-        <div class="Contenido">
-        <h3 class="textmarketing">MARKETING DIGITAL</h3>
-        <p class="textmarketing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum incidunt, voluptate delectus omnis aperiam quibusdam nemo porro vitae iusto provident inventore perferendis totam possimus maxime cupiditate assumenda illum atque?</p>
-       <a href class="textmarketing">CONOCÉ MÁS</a>
-    </div>
-</div>
-<div class="ContenedoradeTarjeta6">
-        <div class="Tarjeta6">
-        <img src="./assets/Produccion.jpg" alt="Audiovisual">
-        <div class="Contenido">
-            <h3>PRODUCCIÓN AUDIOVISUAL</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex rem ratione? Dolores architecto porro, facilis aliquid est a totam ratione provident necessitatibus ab tempora labore illo libero iure laborum!</p>
-            <a href="CONOCE MÁS">CONOCÉ MÁS</a>
+  </header>
+  </header>
+
+  <section class="Titulos">
+    <h2 class="DISEÑO__Titulo"> DISEÑO GRÁFICO </h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/17-1.jpg" alt="1">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">IDENTIDAD CORPORATIVA</h5>
+              <p class="card-text">Representa la imagen corporativa e identidad visual de una marca y sus componentes. Entre ellos podés encontrar el Logo, manual de marca, tarjetas personales y etiquetas.</p>
+            </div>
+          </div>
         </div>
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/17-2.jpg" alt="2">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">PUBLICITARIO</h5>
+              <p class="card-text">El Diseño publicitario es una rama del diseño que combina lo visual con el marketing. Acá se encuentran los banners, el packaging, la vía pública y los flyers o volantes.</p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</section>
-</main>
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/17-3.jpg" alt="3">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">DIGITAL</h5>
+              <p class="card-text"> Soluciones visuales óptimas a los problemas de la comunicación gráfica y publicitaria.
+                Aca podemos encontrar los mailing, presentaciones y post de las redes sociales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/17-4.jpg" alt="4">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">EDITORIAL</h5>
+              <p class="card-text">Se dedica a la diagramación y producción de diferentes piezas. Todo lo que sea libros, revistas, periódicos, fanzines y catálogos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+ 
+  <section class="Titulos">
+    <h2 class="MARKETING__Titulo"> MARKETING DIGITAL</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/Ecommerce 1.jpg" alt="5">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">E-COMMERCE</h5>
+              <p class="card-text">Es la manera de vender productos online, en tiendas que están disponibles las 24
+                horas del día. Otro aspecto positivo del e-commerce es que se puede llegar a clientes
+                que están en otros países y la ventaja comercial está por delante de las tiendas tradicionales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="cardservicios">
+           <img src="./assets/Ecommerce 2.jpg" alt="6">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">POSICIONAMIENTO SEO y SEM</h5>
+              <p class="card-text">En el caso de SEO, optimiza las búsquedas para posicionar a la empresa en un buen lugar en los resultados de los buscadores. Mientras que el posicionamiento SEM se hace con el pago
+                de publicidades y palabras clave para aparecer en los primeros lugares de los buscadores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/Ecommerce 3.jpg" alt="7">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">EMAIL MARKETING</h5>
+              <p class="card-text"> Es el envío masivo de correos a la base de datos de clientes de una empresa con
+                mensajes comerciales, promociones, entre otras cosas, y así tenerlos al tanto de todas
+                las acciones que se están realizando.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="cardservicios">
+           <img src="./assets/Ecommerce 4.jpg" alt="8">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">SOCIAL MEDIA</h5>
+              <p class="card-text">Realizan el manejo de las redes sociales de la empresa como Facebook, Twitter,
+                Instagram, etc; y generan su contenido para generar tráfico en estas plataformas, las
+                cuales son utilizadas diariamente por sus usuarios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+  <section class="Titulos">
+    <h2 class="PRODUCCION__Titulo"> PRODUCCIÓN AUDIOVISUAL</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/pro1.jpg" alt="9">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">Videos Institucionales</h5>
+              <p class="card-text">La pieza audiovisual que toda organización necesita para darse a conocer, difundir
+                su causa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="cardservicios">
+           <img src="./assets/pro2.jpg" alt="10">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">Videos para redes sociales</h5>
+              <p class="card-text">Piezas breves y de impacto para promocionarse en Facebook e Instagram.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="cardservicios">
+            <img src="./assets/pro3.jpg" alt="11">
+            <div class="tarjeta-cuerpo">
+              <h5 class="card-title">Videos de concientización</h5>
+              <p class="card-text"> Piezas audiovisuales que difunden determinada problemática para darla a conocer
+                masivamente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="cardservicios">
+              <img src=".//assets/pro8.jpg" alt="16">
+              <div class="tarjeta-cuerpo">
+                <h5 class="card-title">Fotografía</h5>
+                <p class="card-text"> Fotografías de eventos, fotografía publicitaria, y fotografía corporativa.</p>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+            <div class="cardservicios">
+              <img src="./assets/pro5.jpg" alt="13">
+              <div class="tarjeta-cuerpo">
+                <h5 class="card-title">Videos documentales</h5>
+                <p class="card-text"> Retratos de testimonios que permiten contar la historia de los protagonistas del trabajo
+                    que realiza la organización.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cardservicios">
+              <img src="./assets/pro7.jpg" alt="14">
+              <div class="tarjeta-cuerpo">
+                <h5 class="card-title">Videos de campaña</h5>
+                <p class="card-text"> Convocatorias de captación de fondos, socios o voluntarios que permiten realizar
+                    objetivos y proyectos específicos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cardservicios">
+              <img src="./assets/pro 6.jpg" alt="15">
+              <div class="tarjeta-cuerpo">
+                <h5 class="card-title">Videos publicitarios</h5>
+                <p class="card-text"> Video cortó diseñado para ayudar a llegar a una gran cantidad de clientes y aumen-
+                    tar el conocimiento de su marca a través de un mensaje breve y fácil de recordar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cardservicios">
+             <img src="./assets/pro4.jpg" alt="12">
+              <div class="tarjeta-cuerpo">
+                <h5 class="card-title">Videos de animación</h5>
+                <p class="card-text">Piezas animadas que permiten contar una historia o brindar información de manera
+                  más didáctica y atractiva.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
 
 </body>
 </html>
