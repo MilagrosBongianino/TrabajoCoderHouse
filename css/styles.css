@@ -552,7 +552,6 @@ display: block;
     .Formulariodecontacto{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
 }
 
 @media (min-width:1140px){
@@ -560,7 +559,8 @@ display: block;
             grid-column-start: span 3;
             grid-row-start: span 3;
         }
-        .Formulariodecontacto{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-    }
+    .Formulariodecontacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       }
+}
