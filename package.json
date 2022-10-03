@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-coderhouse-bongianinomilagros-mejorado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-sass": "sass --watch scss/main.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilagrosBongianino/TrabajoCoderHouse.git"
+  },
+  "author": "Milagros Bongianino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilagrosBongianino/TrabajoCoderHouse/issues"
+  },
+  "homepage": "https://github.com/MilagrosBongianino/TrabajoCoderHouse#readme"
+}

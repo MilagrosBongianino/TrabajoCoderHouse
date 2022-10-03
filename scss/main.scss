@@ -1,0 +1,18 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/reset";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/formulario";
+
+@import "./components/cards";
+@import "./components/galeria";
+
+@import "./pages/index";
+@import "./pages/quienessomos";
+@import "./pages/servicios";
+@import "./pages/trabajos";
+@import "./pages/contacto";
+

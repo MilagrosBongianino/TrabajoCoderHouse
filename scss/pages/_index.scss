@@ -1,0 +1,140 @@
+
+// Seccion Trabajos
+
+.TRABAJOS__Titulo{
+    padding: 2%;
+    text-align: center;
+    color: $color-primario;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-variant: small-caps;
+  }
+
+ 
+//Seccion Servicios
+.Servicios__Titulo{
+    margin-top: 30px;
+    text-align: center;
+    color: $color-primario;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.ContenedorTarjetasSevicios{
+    position: relative;
+    width: 100%;
+    @include flex-center();
+    flex-wrap: wrap;
+    padding: 30px;
+    .Card{
+        position: relative;
+    max-width: 300px;
+    height: 235px;
+    background-color: $color-primario;
+    padding: 20px 15px;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(0,0,0,0.5);
+    transition: 0,3s ease-in-out;
+    &:hover{
+        height: 510px;  
+    }
+    &:hover .Contenido{
+        visibility: visible;
+        opacity: 1;
+        width: auto;
+        margin-top: -60px;
+        transition-delay: 0.3s;
+    }
+    .ServiciosImagenes{
+        position: relative;
+        width: 100%;
+        height: 260px;
+        top: -60px;
+        box-shadow: 0 5px 20px;
+    }
+    .ServiciosImagenes img{
+        max-width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+   .Contenido{
+    position: relative;
+    padding: 30px 35px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Contenido p{
+    font-size: small;
+    font-style: normal;
+}
+.Contenido a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: nome;
+    text-decoration-color: $color-primario;
+    color: $color-secundario;
+}
+.Contenido h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $color-secundario;
+}
+   }
+    }
+
+//Seccion Clientes
+
+.Clientes__Titulo {
+    margin-top: -30px;
+    text-align: center;
+    color: $color-primario;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+  img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+//Seccion Redes
+
+.RedesContenedor{
+    @include flex-center();
+    li{
+    margin: 0 10px;
+    @include flex-center();
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        @include flex-center();
+        margin-top: 20px;
+        &:hover i{
+            color: $color-secundario;
+        }
+        i{
+            font-size: 1.1rem;
+        }
+    }
+} 
+    .copyright{
+        @include flex-center();
+        font-size: small;
+        color: white;
+    }

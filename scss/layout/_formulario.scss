@@ -1,0 +1,48 @@
+//Contacto
+.Formulariodecontacto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+    width: 100%;
+    background-color:#ED6927;
+    align-items: center;
+    @include tablet-lg{
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+    @include computadora-lg{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.Formulario{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    background-color: #0DB2AB;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    }
+
+    
+.Formularioescribinos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+ .controls{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 12px;
+ }

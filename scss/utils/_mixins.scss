@@ -1,0 +1,26 @@
+//Mixins
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexbox ($justify, $aling){
+    display: flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+//Mixins y media
+
+@mixin tablet-lg{
+    @media (min-width:720px){
+        @content 
+    }
+}
+
+@mixin computadora-lg {
+    @media (min-width:1140px){
+        @content 
+    }
+}
